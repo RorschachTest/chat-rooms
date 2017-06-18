@@ -1,0 +1,22 @@
+{
+  "name": "chatrooms",
+  "version": "1.0.0",
+  "description": "multiroom chat built in socket.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RorschachTest/chat-rooms.git"
+  },
+  "keywords": [
+    "socket.io"
+  ],
+  "author": "rihazzahir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RorschachTest/chat-rooms/issues"
+  },
+  "homepage": "https://github.com/RorschachTest/chat-rooms#readme"
+}
