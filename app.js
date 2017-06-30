@@ -8,10 +8,12 @@ var chatId = new Set();
 // Property of socket {id, avatar, room}
 
 // Static files
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+var port = process.env.PORT || 8080;
 
 // Creating server
-var server = app.listen(8080, function(){
+var server = app.listen(port, function(){
   console.log('server is listening to port 8080');
 });
 
