@@ -4,7 +4,8 @@
   "description": "tanks multiplayer room gaming implemented in socket.io",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [
     "socket.io",
