@@ -8,7 +8,7 @@ var chatId = new Set();
 // Property of socket {id, avatar, room}
 
 // Static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 var port = process.env.PORT || 8080;
 
