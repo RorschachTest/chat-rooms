@@ -4,20 +4,35 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <title>Chat room</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Chat room-Enter at your own risk</title>
   </head>
   <body>
-    <div id="mario-chat">
-        <h2>Mario Chat</h2>
-        <div id="chat-window">
-            <div id="output"></div>
-            <div id="feedback"></div>
-        </div>
-        <input id="handle" type="text" placeholder="Handle" autocomplete="off"/>
-        <input id="message" type="text" placeholder="Message" autocomplete="off"/>
-        <button id="send">Send</button>
+
+    <div id="enter">
+      <input type="text" placeholder="Avatar's name" id="avatar" required autocomplete="off">
+      <button type="button" name="button" id="avatarBtn">Create Avatar</button>
     </div>
+
+    <div id="menu">
+      <button type="button" name="button" id="newchat">Start New Chat</button>
+      <div id="roomList"></div>
+    </div>
+
+    <div id="chat">
+      <div id="chat-room">
+          <h2>Chat Room</h2>
+          <div id="chat-window">
+              <div id="output"></div>
+          </div>
+          <input id="message" type="text" placeholder="Message" autocomplete="off"/>
+          <div style="display: inline;">
+            <button id="send">Send</button>
+            <button id="leave">Leave</button>
+          </div>
+      </div>
+    </div>
+
   </body>
-  <script type="text/javascript" src="/chat.js"></script>
+  <script type="text/javascript" src="/sockethandler.js"></script>
 </html>
